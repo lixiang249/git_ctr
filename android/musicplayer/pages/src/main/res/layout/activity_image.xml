@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_deep_teal_500" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        <com.lilin.pages.RoundImageView
+            android:id="@+id/iv_circle"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@mipmap/elec"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_jmp_list"
+            android:background="@drawable/btn_jmp_list"
+            android:textSize="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:hint=">" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_jmp_list2"
+            android:background="@drawable/btn_jmp_list2"
+            android:textSize="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>

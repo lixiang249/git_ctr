@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- shape表示形状：oval表示椭圆 -->
+        <shape android:shape="rectangle">
+            <solid android:color="#ddffe4c4">
+
+            </solid>
+            <!-- corners表示控件四个边角的圆滑度 -->
+            <corners android:radius="10dp"/>
+
+        </shape>
+    </item>
+</layer-list>

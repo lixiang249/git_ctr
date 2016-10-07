@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bj6"
+    tools:context="com.example.lixiang.softlogin.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/good2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <TextView
+            android:id="@+id/textViewNameRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名:"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextNameRegister"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:hint="username"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="5dp"
+            android:textCursorDrawable="@null"
+             />
+        <TextView
+            android:id="@+id/textViewPassRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码:"
+            android:textSize="20sp"
+            android:layout_below="@id/editTextNameRegister"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp" />
+        <EditText
+            android:id="@+id/editTextPassRegister"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:layout_below="@id/editTextNameRegister"
+            android:background="@drawable/bg_edittext"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/editTextPassAgain"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/editTextPassRegister"
+            android:hint="again"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="120dp"/>
+
+        <Button
+            android:id="@+id/buttonSureRegister"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="25sp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/mybutton"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/editTextPassAgain" />
+        <Button
+            android:id="@+id/buttonQuitRegister"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="25sp"
+            android:background="@drawable/mybutton"
+            android:layout_alignTop="@+id/buttonSureRegister"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="57dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
